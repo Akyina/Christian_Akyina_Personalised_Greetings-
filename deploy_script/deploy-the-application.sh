@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define variables
-REMOTE_IP="3.87.12.167"    #"3.82.223.175"
-PEM_FILE="13_july_2024_personalised_greetings.pem"
-GIT_KEY="personalised_greetings_git_key"
-REPO_URL="git@github.com:b-oppon-work/bernard_Oppon_personalized_greetings.git"
+REMOTE_IP="enter the ip address of your machine you want to ssh into"
+PEM_FILE="general_keys.pem"
+GIT_KEY="personalized_greetings_key"
+REPO_URL="git@github.com:Akyina/Christian_Akyina_Personalised_Greetings-.git"
 
 # Copy the Git SSH key to the remote server
 echo "Copying Git SSH key to remote server..."
