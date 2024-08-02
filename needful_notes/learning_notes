@@ -1,0 +1,10 @@
+if you get this error after creating your config file and trying to ssh into your repo: 
+
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+1. verify connection to the ssh agent using this command: ssh -T git@github.com.
+2.if you get this error after running the verify command: Could not open a connection to your authentication agent
+        then your ssh agent is not running. type this command eval "$(ssh-agent -s)", this should output a message like Agent pid 1234.
+3. Add your SSH private key to the agent: ssh-add /home/ubuntu/personalized_greetings_key (directory to your private key/private key)
+4.try cloning again or verify connection by typing ssh -T git@github.com
