@@ -1,0 +1,9 @@
+scp -i general_keys.pem /home/ubuntu/environment/project/my_keys ubuntu@18.232.65.81:/home/ubuntu/.ssh/my_keys 
+
+
+scp -i general_keys.pem /home/ubuntu/environment/project/config ubuntu@18.232.65.81:/home/ubuntu/.ssh/config
+
+ssh -i "general_keys.pem" ubuntu@18.232.65.81
+
+
+git clone git@github.com:Akyina/Christian_Akyina_Personalised_Greetings-.git
