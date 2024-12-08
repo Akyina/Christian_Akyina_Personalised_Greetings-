@@ -1,3 +1,13 @@
+terraform {
+  backend "s3" {
+    region = "us-east-1"
+    key    = "mytestVPC"
+    bucket = "akyinabucket"
+  }
+
+}
+
+
 module "ec2_instance" {
   source        = "./../modules/ec2/"
   ami_id        = "ami-04a81a99f5ec58529"

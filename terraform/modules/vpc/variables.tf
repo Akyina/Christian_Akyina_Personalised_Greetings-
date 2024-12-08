@@ -22,3 +22,9 @@ variable "default_tags" {
   description = "A map of default tags to assign to resources"
   type        = map(string)
 }
+
+variable "region" {
+  description = "AWS region"
+  type        = string
+  default     = "us-east-1"
+}
