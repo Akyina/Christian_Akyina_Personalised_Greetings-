@@ -11,7 +11,7 @@ terraform {
 module "ec2_instance" {
   source        = "./../modules/ec2/"
   ami_id        = "ami-04a81a99f5ec58529"
-  instance_type = instance_type = lookup({dev = "t2.micro", prod = "t3.small"}, terraform.workspace, "m5.large")
+  instance_type = lookup({dev = "t2.micro", prod = "t3.small"}, terraform.workspace, "m5.large")
   region        = "us-east-1"
   instance_name = "my_terraform_ec2"
 }
